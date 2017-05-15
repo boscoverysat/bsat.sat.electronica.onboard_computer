@@ -14,6 +14,18 @@ El actual diseño electrónico se ha llevado a cabo mediante el software **KiCAD
 satélite (formado por un Arduino Nano v3.0), los sensores de inercia y orientación, así como un único sensor de temperatura, los pines necesarios
 para la conexión de cuatro sensores de intensidad luminosa y el módulo de transmisión RF a 433MHz.
 
+## Notas del repositorio
+
+Para el correcto funcionamiento del contenido de este repositorio, es necesario, una vez obtenido el mismo, clonar el repositorio con las librerías de componentes creados específicamente para el proyecto.
+
+```sh
+$ git clone https://github.com/boscoverysat/bsat.sat.electronica.onboard_computer.git
+$ cd bsat.sat.electronica.onboard_computer
+$ git clone https://github.com/boscoverysat/bsat.sat.electronica.librerias.git lib
+```
+
+Una vez hecho esto, al abrir el proyecto con KiCAD, deberemos importar las librerías que acabamos de descargar.
+
 ## Contenido actual de la Shield
 
 La PCB cuenta con unas dimensiones de 77 x 77 mm, realizada en base de fibra de vidrio y una única capa de cobre, disponiendo de cuatro orificios
